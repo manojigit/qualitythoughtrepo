@@ -15,7 +15,7 @@ public class GetAPIThirdTest {
 		//https://reqres.in/api/users/2
 		RequestSpecification requestSpec = RestAssured.given().contentType("application/json");
 		Response response = requestSpec.get("https://reqres.in/api/users/2");
-		System.out.println(response.getStatusCode());
+		System.out.println(response.getStatusCode())
 		System.out.println(response.getBody().asPrettyString());
 		Assert.assertEquals(response.getStatusCode(), 200);
 		
